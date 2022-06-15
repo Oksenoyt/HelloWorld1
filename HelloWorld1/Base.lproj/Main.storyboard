@@ -16,32 +16,45 @@
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nEX-Lc-zQK">
-                                <rect key="frame" x="20" y="483" width="388" height="409"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nEX-Lc-zQK">
+                                <rect key="frame" x="20" y="64" width="388" height="384"/>
                                 <color key="backgroundColor" systemColor="systemPurpleColor"/>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="efJ-fE-qdd">
-                                <rect key="frame" x="20" y="44" width="388" height="402"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PAq-ie-6k3">
+                                <rect key="frame" x="20" y="488" width="388" height="384"/>
+                                <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="PAq-ie-6k3" secondAttribute="height" multiplier="388:393" id="P6Z-Rb-0UA"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PAq-ie-6k3" secondAttribute="trailing" constant="20" id="Dht-BH-yfR"/>
+                            <constraint firstItem="PAq-ie-6k3" firstAttribute="height" secondItem="nEX-Lc-zQK" secondAttribute="height" id="HSv-eO-fIX"/>
+                            <constraint firstItem="PAq-ie-6k3" firstAttribute="top" secondItem="nEX-Lc-zQK" secondAttribute="bottom" constant="40" id="MDn-BS-ZjB"/>
+                            <constraint firstItem="PAq-ie-6k3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Ocv-51-yBm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="PAq-ie-6k3" secondAttribute="bottom" constant="20" id="WHP-KT-Ysc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nEX-Lc-zQK" secondAttribute="trailing" constant="20" id="dIP-ad-cMW"/>
+                            <constraint firstItem="nEX-Lc-zQK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="gRF-F4-O3M"/>
+                            <constraint firstItem="nEX-Lc-zQK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="pCX-Hi-xbe"/>
+                            <constraint firstItem="PAq-ie-6k3" firstAttribute="top" secondItem="nEX-Lc-zQK" secondAttribute="bottom" constant="40" id="y3V-OB-Fjl"/>
+                            <constraint firstItem="PAq-ie-6k3" firstAttribute="width" secondItem="nEX-Lc-zQK" secondAttribute="width" id="y3t-CJ-Szt"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="18" y="101"/>
+            <point key="canvasLocation" x="16.822429906542055" y="100.43196544276459"/>
         </scene>
     </scenes>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
-        <systemColor name="systemOrangeColor">
-            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemPurpleColor">
             <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
